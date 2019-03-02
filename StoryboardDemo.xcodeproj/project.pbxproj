@@ -19,9 +19,12 @@
 		23CE2D9F222A810000603D50 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23CE2D9E222A810000603D50 /* Login.storyboard */; };
 		23CE2DA2222A82AB00603D50 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23CE2DA1222A82AB00603D50 /* LoginViewController.m */; };
 		23CE2DA5222A876A00603D50 /* HahaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23CE2DA4222A876A00603D50 /* HahaViewController.m */; };
+		7796BC524B644B98F2EA7F4F /* libPods-StoryboardDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 207EB17DE2655FBEEE306DF2 /* libPods-StoryboardDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D6BBC52E8337466F8C20F2D /* Pods-StoryboardDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoryboardDemo.release.xcconfig"; path = "Target Support Files/Pods-StoryboardDemo/Pods-StoryboardDemo.release.xcconfig"; sourceTree = "<group>"; };
+		207EB17DE2655FBEEE306DF2 /* libPods-StoryboardDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StoryboardDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23499114222A724B00B10DD1 /* StoryboardDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryboardDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23499117222A724B00B10DD1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		23499118222A724B00B10DD1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,6 +45,7 @@
 		23CE2DA1222A82AB00603D50 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		23CE2DA3222A876A00603D50 /* HahaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HahaViewController.h; sourceTree = "<group>"; };
 		23CE2DA4222A876A00603D50 /* HahaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HahaViewController.m; sourceTree = "<group>"; };
+		CD4EEC82905087F720DAA3AB /* Pods-StoryboardDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StoryboardDemo.debug.xcconfig"; path = "Target Support Files/Pods-StoryboardDemo/Pods-StoryboardDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,17 +53,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7796BC524B644B98F2EA7F4F /* libPods-StoryboardDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C13E6C74B55DC08BBA7DC44 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD4EEC82905087F720DAA3AB /* Pods-StoryboardDemo.debug.xcconfig */,
+				0D6BBC52E8337466F8C20F2D /* Pods-StoryboardDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		2349910B222A724B00B10DD1 = {
 			isa = PBXGroup;
 			children = (
 				23499116222A724B00B10DD1 /* StoryboardDemo */,
 				23499115222A724B00B10DD1 /* Products */,
+				1C13E6C74B55DC08BBA7DC44 /* Pods */,
+				927FB720A7CBF42F2A2E929B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,6 +114,14 @@
 			path = StoryboardDemo;
 			sourceTree = "<group>";
 		};
+		927FB720A7CBF42F2A2E929B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				207EB17DE2655FBEEE306DF2 /* libPods-StoryboardDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -104,6 +129,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2349912A222A724E00B10DD1 /* Build configuration list for PBXNativeTarget "StoryboardDemo" */;
 			buildPhases = (
+				05AFE33F720BC99FD296DCED /* [CP] Check Pods Manifest.lock */,
 				23499110222A724B00B10DD1 /* Sources */,
 				23499111222A724B00B10DD1 /* Frameworks */,
 				23499112222A724B00B10DD1 /* Resources */,
@@ -163,6 +189,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05AFE33F720BC99FD296DCED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StoryboardDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		23499110222A724B00B10DD1 /* Sources */ = {
@@ -315,6 +366,7 @@
 		};
 		2349912B222A724E00B10DD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD4EEC82905087F720DAA3AB /* Pods-StoryboardDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -332,6 +384,7 @@
 		};
 		2349912C222A724E00B10DD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D6BBC52E8337466F8C20F2D /* Pods-StoryboardDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
